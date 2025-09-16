@@ -1,0 +1,14 @@
+
+training:
+
+  img_size: (224,224)
+  batch_size_train: 2
+  batch_size_val: 2
+  lr: 0.001
+
+  train_dataset_folder: "dataset\\ear\\train"
+  val_dataset_folder: "dataset\\ear\\val"
+  num_epochs: 1
+  log_outputs: "log_ear"
+  model_output: "best_model_ear"
+

@@ -1,0 +1,17 @@
+# add folder to untrack
+__pycache__/
+build/
+sample_data/
+dataset/
+data/
+<<<<<<< HEAD
+/models/
+strorage/
+=======
+deployment/models/
+deployment/strorage/
+/models/
+
+>>>>>>> origin/dev
+.idea/
+

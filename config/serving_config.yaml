@@ -1,0 +1,42 @@
+model:
+  version : "1"
+  model_multitask: "models/vit16_multitask/multitask_vit16.pth"
+  annotations_path: "models/vit16_multitask/annotations.json"
+  model_pretrained: "google/vit-base-patch16-224"
+  num_tasks: 3
+  num_diseases: 9
+  map_location : "cpu"
+  list_tasks: ["ear", "nose", "throat"]
+  list_diseases: [
+  "viêm tai giữa ứ dịch",
+  "viêm ống tai ngoài cấp",
+  "nấm ống tai ngoài",
+  "viêm tai giữa mãn",
+  "tai bình thường",
+  "viêm tai giữa cấp",
+  "viêm mũi xoang cấp",
+  "viêm mũi dị ứng",
+  "U vòm lành tính caVA"
+  ]
+
+fastapi:
+  version: 1
+  root: "/"
+  testapi: "/testapi"
+  classify: "/classify"
+  upload_dir : "/mnt/strorage/" 
+  host: '0.0.0.0'
+  protocol: "http://"
+  port: ':8000'
+  datatype: ['jpg', 'jpeg']
+
+streamlit:
+  version: 1
+  port: "8501"
+  host: "server"
+  upload_dir : "/mnt/strorage/ui/" 
+  lottie_url: "https://lottie.host/682de840-9c7b-49f6-8a32-1dc5ee8b8bcd/KNvJrhnjhG.json"
+
+size_image:
+  width: 230
+  height: 150

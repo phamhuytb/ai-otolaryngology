@@ -1,0 +1,13 @@
+training:
+
+  img_size: 224
+  batch_size_train: 128
+  batch_size_val: 64
+  lr: 0.0001
+  k_folds: 5
+
+  train_dataset_folder: '/media/vkuai/01D7F711799324B0/loc/medicine/ai-otolaryngology/Ear_Nose_Throat_Ver12/Ear_Nose_Throat/train'
+  val_dataset_folder: '/media/vkuai/01D7F711799324B0/loc/medicine/ai-otolaryngology/Ear_Nose_Throat_Ver12/Ear_Nose_Throat/val'
+  num_epochs: 150
+  log_outputs:  "/media/vkuai/01D7F711799324B0/loc/medicine/ai-otolaryngology/src/log_convnext2"
+  model_output: "/media/vkuai/01D7F711799324B0/loc/medicine/ai-otolaryngology/src/best_model_convnext2"

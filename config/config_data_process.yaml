@@ -1,0 +1,4 @@
+paths:
+  input_folder: D:/DEEP_MED/DATA/DATA_TEST/1
+  output_folder: D:/DEEP_MED/DATA/DATA_TEST/2
+  dataset_path: "D:/DEEP_MED/DATA/DATA_TEST"

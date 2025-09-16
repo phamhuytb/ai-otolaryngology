@@ -1,0 +1,70 @@
+#example 1
+
+#INITIAL SETTINGS
+data_directory: ../data/
+data_name: breast-cancer-wisconsin.data
+drop_columns: ["id"]
+target_name: class
+test_size: 0.2
+model_directory: ../models/KNN
+model_name: example.tf
+
+# example 2
+n_neighbors: 5
+weights: uniform
+algorithm: auto
+leaf_size: 15
+p: 2
+metric: minkowski
+n_jobs: 1
+
+# example 3
+# augment:
+#   change_pitch:
+#   - -0.5
+#   - 1
+#   change_speech:
+#   - 0.7
+#   - 1.2
+#   - 1.5
+#   change_volume:
+#   - 0.2
+#   - 0.5
+#   - 2
+# data:
+#   raw_data1_csv: ./dataset/raw_data/raw_data1/csv_data.csv
+#   raw_data1_dir: ./dataset/raw_data/raw_data1/audio/
+#   raw_data2_csv: ./dataset/raw_data/raw_data2/csv_data.csv
+#   raw_data2_dir: ./dataset/raw_data/raw_data2/audio/
+#   test_in_data_csv: ./dataset/test_in_data/csv_data.csv
+#   test_in_data_dir: ./dataset/test_in_data/audio/
+#   test_out_data_csv: ./dataset/test_out_data/csv_data.csv
+#   test_out_data_dir: ./dataset/test_out_data/audio/
+#   train_aug_csv: ./dataset/train_aug/csv_data.csv
+#   train_aug_dir: ./dataset/train_aug/audio/
+#   train_data_csv: ./dataset/train_data/csv_data.csv
+#   train_data_dir: ./dataset/train_data/audio/
+#   vocab_dir: ./dataset/vocab_dataset.json
+# service:
+#   checkpoint_dir: ./exp/models/best/best
+# train:
+#   best_checkpoint:
+#     data_name: train
+#     metric_type: accuracy
+#   best_score:
+#     vinai/PhoWhisper-base: 0
+#     vinai/PhoWhisper-tiny: 0.785
+#   best_seed:
+#     vinai/PhoWhisper-base: 968
+#     vinai/PhoWhisper-tiny: 0
+#   checkpoint_dir: ./exp/models/whisper_base_full/best
+#   early_stopping:
+#     data_name: train
+#     loss_type: loss
+#     patience: 2
+#   epoch_num: 8
+#   lr: 2.0e-05
+#   n_train: 1
+#   pre_trained_model: vinai/PhoWhisper-base
+#   test_batch_size: 16
+#   train_batch_size: 16

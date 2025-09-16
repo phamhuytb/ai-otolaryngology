@@ -1,0 +1,22 @@
+model_path: "/home/bht/VKU/ThucTap_AI_Y_Te_PCT/model_trained/single_vit/weights.h5"
+size: 224
+
+id2label:
+  0: 'mui_binh_thuong'
+  1: 'nam_ong_tai_ngoai'
+  2: 'polyp_mui'
+  3: 'tai_binh_thuong'
+  4: 'thanh_quan_bth'
+  5: 'u_lanh_tinh'
+  6: 'u_vom_lanh_tinh_caVA'
+  7: 'veo_vach_ngan'
+  8: 'viem_mui_di_ung'
+  9: 'viem_mui_xoang_cap'
+  10: 'viem_ong_tai_ngoai_cap'
+  11: 'viem_tai_giua_cap'
+  12: 'viem_tai_giua_man'
+  13: 'viem_tai_giua_u_dich'
+  14: 'viem_thanh_quan'
+  15: 'vom_binh_thuong'
+
+

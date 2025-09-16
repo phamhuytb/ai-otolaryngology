@@ -1,0 +1,33 @@
+version: '1.0'  # Define the version of the Docker Compose file format
+
+services:
+  server:
+    image: hieudinhpro/ai_server_deepmed_ent:v1  # Specify the image to use for the server service
+    ports: 
+      - 8000:8000  # Map port 8000 on the host to port 8000 on the container
+    networks:
+      - deploy_network  # Connect the server service to the deploy_network
+    container_name: server  # Name the container 'server'
+    volumes:
+      - strorage:/mnt/strorage  # Mount the 'strorage' volume to '/mnt/strorage' in the container
+
+
+  streamlit:
+    image: hieudinhpro/ai_ui_deepmed_ent:v5  # Specify the image to use for the streamlit service
+    depends_on:
+      - server  # Define a dependency on the server service
+    ports: 
+      - 8501:8501  # Map port 8501 on the host to port 8501 on the container
+    networks:
+      - deploy_network  # Connect the streamlit service to the deploy_network
+    container_name: streamlit  # Name the container 'streamlit'
+    volumes:
+      - strorage:/mnt/strorage  # Mount the 'strorage' volume to '/mnt/strorage' in the container
+    
+
+networks:
+  deploy_network:
+    driver: bridge  # Use the bridge driver for the deploy_network
+
+volumes:
+  strorage:  # Define the 'strorage' volume

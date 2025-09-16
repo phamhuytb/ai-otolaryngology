@@ -1,0 +1,24 @@
+model_pretrained: "google/vit-base-patch16-224-in21k"
+model_multitask: "/home/bht/VKU/ThucTap_AI_Y_Te_PCT/model_trained/output_base_v1/model.pth"
+map_location: "cpu"
+num_tasks: 3
+num_diseases: 16
+list tasks: ["ear", "nose", "throat"]
+list diseases: [
+  "nam_ong_tai_ngoai",
+  "tai_binh_thuong",
+  "viem_ong_tai_ngoai_cap",
+  "viem_tai_giua_cap",
+  "viem_tai_giua_man",
+  "viem_tai_giua_u_dich",
+  "mui_binh_thuong",
+  "polyp_mui",
+  "u_vom_lanh_tinh_caVA",
+  "veo_vach_ngan",
+  "viem_mui_di_ung",
+  "viem_mui_xoang_cap",
+  "vom_binh_thuong",
+  "thanh_quan_bth",
+  "u_lanh_tinh",
+  "viem_thanh_quan"
+]

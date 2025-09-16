@@ -1,0 +1,25 @@
+<<<<<<< HEAD
+training:
+
+  img_size: (112,112)
+  batch_size_train: 2
+  batch_size_val: 2
+  lr: 0.001
+
+  train_dataset_folder: "dataset\\throat\\train"
+  val_dataset_folder: "dataset\\throat\\val"
+  num_epochs: 1
+  log_outputs: "log_hong_throat"
+  model_output: "best_model_throat"
+=======
+training:
+  img_size: 224
+  batch_size_train: 1
+  batch_size_val: 1
+  lr: 0.001
+  train_dataset_folder: "dataset\\ear\\train"
+  val_dataset_folder: "dataset\\ear\\val"
+  num_epochs: 1
+  log_outputs: "log"
+  model_output: "best_model"
+>>>>>>> origin/dev
